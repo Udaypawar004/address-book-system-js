@@ -9,11 +9,11 @@ class Contact {
       this.phone = phone;
       this.email = email;
     }
-  }
+}
   
-  let addressBook = [];
+let addressBook = [];
 
-  function validateContact(contact) {
+function validateContact(contact) {
     const nameRegex = /^[A-Z][a-z]{2,}/;
     const addressRegex = /^.{4,}/;
     const zipRegex = /^\d{5}$/;
@@ -35,4 +35,19 @@ class Contact {
     )
       return false;
     return true;
-  }
+}
+function addContact(contact) {
+    if (validateContact(contact)) {
+      addressBook.push(contact);
+    } else {
+      console.error("Invalid Contact");
+    }
+} 
+
+function addContact(contact) {
+    if (validateContact(contact)) {
+      addressBook.push(contact);
+    } else {
+      console.error("Invalid Contact");
+    }
+}
