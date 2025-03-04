@@ -99,3 +99,9 @@ function searchByCityOrState(cityOrState) {
       (contact) => contact.city === cityOrState || contact.state === cityOrState
     );
 }
+
+function viewByCityOrState(cityOrState) {
+    return addressBook.filter(
+      (contact) => contact.city === cityOrState || contact.state === cityOrState
+    );
+}
